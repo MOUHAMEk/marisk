@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Marisk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">𝓜𝓪𝓻𝓲𝓼𝓴</div>
+        <div class="notification-icon">🔔<span class="notification-counter">1</span></div>
+    </div>
+</header>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+    font-size: 24px;
+    font-family: 'Segoe Script', cursive;
+}
+
+.notification-icon {
+    margin-right: 20px;
+    position: relative;
+}
+
+.notification-counter {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.welcome-box, .instruction-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.action-button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info p:first-child {
+    margin-top: 0;
+}
+
+</style>
+<div class="container">
+    <div class="welcome-box">
+        <p>Bienvenue chez Interface Responsable</p>
+    </div>
+    <div class="instruction-box">
+        <p>Cliquez sur Afficher les risques signalés pour en recevoir pour un premier instant.</p>
+    </div>
+    
+    <button class="action-button">Voir les risques signalés</button>
+    <button class="action-button">Voir les actions signalées pour toi</button>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="contact-info">
+            <p>Contactez-nous :</p>
+            <p>Mail: example@mail.com</p>
+            <p>WhatsApp: +1234567890</p>
+            <p>Email: info@marisk.com</p>
+        </div>
+        <div class="logo">𝓜𝓪𝓻𝓲𝓼𝓴</div>
+    </div>
+</footer>
+
+<script>
+    document.querySelector('.notification-icon').addEventListener('click', function() {
+    // Simuler l'affichage des notifications
+    alert('Afficher les notifications ici.');
+});
+
+</script>
+</body>
+</html>
